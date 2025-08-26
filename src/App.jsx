@@ -19,8 +19,7 @@ function App() {
       }else{
         disptach(logout())
       }
-  })
-    .catch((error)=> console.log(error))
+  }).catch((error)=> console.log(error))
     .finally(()=>setLoading(false))
   }, [])
   
@@ -29,7 +28,7 @@ function App() {
       <div>
         <Header/>
         Todo
-        {/* <Outlet/> */}
+        <Outlet/>
         <Footer/>
       </div>
     </div>
