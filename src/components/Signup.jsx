@@ -27,10 +27,10 @@ function Signup() {
         }
     }
   return (
-    <div>
+    <div className='w-full bg-gray-700 text-white text-2xl'>
         <div>
             <h2>Sign up to create new Account</h2>
-            <p>
+            <p className='mb-5'>
                 already have an account?
                 <Link to="/login">
                 Sign In
@@ -44,6 +44,7 @@ function Signup() {
                     label = "Name :"
                     type = "text"
                     placeholder = "Enter your name"
+                    className="mb-5"
                     {...register("name",{
                         required:true
                     })}
@@ -52,6 +53,7 @@ function Signup() {
                     label = "Email :"
                     type = "email"
                     placeholder = "Enter your Email"
+                    className="mb-5"
                     {...register("email",{
                         required:true
                     })}
@@ -60,6 +62,7 @@ function Signup() {
                     label = "Password :"
                     type = "password"
                     placeholder = "Enter your password"
+                    className="mb-5"
                     {...register("password",{
                         required:true
                     })}

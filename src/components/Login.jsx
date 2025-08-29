@@ -26,15 +26,15 @@ function Login() {
         }
     }
     return (
-        <div>
+        <div className='w-full bg-gray-700 text-white text-2xl'>
             <div>
                 <div>
                     <span>
                         <Logo width='100%' />
                     </span>
-                </div>
+                </div >
                 <h2>Sign in to your account</h2>
-                <p> Don't have account ?&nbsp;
+                <p className='mb-4'> Don't have account ?&nbsp;
                     <Link to="/signup">Sign Up</Link>
                 </p>
 
@@ -47,6 +47,7 @@ function Login() {
                             <Input
                                 label="Email :"
                                 type="email"
+                                className="mb-5"
                                 placeholder="Enter your Email : "
                                 {...register("email",
                                     {
@@ -57,6 +58,7 @@ function Login() {
                             <Input 
                             label="Password :"
                             type = "password"
+                            className="mb-5"
                             placeholder = "Enter your password"
                             {...register("password",{
                                 required : true

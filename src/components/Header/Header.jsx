@@ -35,7 +35,7 @@ function Header() {
     }
   ]
   return (
-    <header>
+    <header className='w-full  bg-red-700 '>
       <nav>
         <div>
           <Link
@@ -44,12 +44,13 @@ function Header() {
             <Logo />
           </Link>
         </div>
-        <ul>
+        <ul  className='list-none flex gap-5 '>
           {navItems.map((item) =>
           (
             item.active ? (
               <li
                 key={item.name}
+               
               >
                 <button
                   onClick={() => navigate(item.slug)}
